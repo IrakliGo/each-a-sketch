@@ -13,17 +13,18 @@
 
 <div class="header">
     <h6>select size</h6>
-    <button class="btn btn-danger">size</button>
+    <button class="btn btn-danger" id="popup">size</button>
 </div>
-
+<p id="show"></p>
+<p id="show2"></p>
 <div class="board">
 
 </div>
 
 <div class="footer">
-    <button class="btn btn-dark">black</button>
-    <button class="btn btn-warning">random</button>
-    <button class="btn btn-primary">reset</button>
+    <button class="btn btn-dark" onclick="setColor('black')">black</button>
+    <button class="btn btn-warning" onclick="setColor('random')">random</button>
+    <button class="btn btn-primary" onclick="reset()">reset</button>
 </div>
 </body>
 </html>
