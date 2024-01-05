@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+}
+
+.footer {
+    margin-top: 20px;
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+}
