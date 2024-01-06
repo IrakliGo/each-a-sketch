@@ -1,7 +1,10 @@
+//creating global
 let color 
 
+//what should happen once u click somewhere
 let click = false
 
+//continuing
 document.addEventListener('DOMContentLoaded', () => {
      let show2 = document.getElementById('show2')
     document.querySelector('body').addEventListener('click', (e) => {
@@ -17,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-
+//popup prompt
     const popup = document.getElementById('popup')
     popup.addEventListener('click', () => {
         let size2 = createSize()
@@ -26,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+//what will happen once user chooses the size
 function createBoard(size) {
     let board = document.querySelector('.board')
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`
@@ -41,6 +45,7 @@ function createBoard(size) {
 }
 
 
+//creating size through prompt
 function createSize() {
     let input = prompt('')
     const show = document.getElementById('show')
@@ -58,6 +63,9 @@ function createSize() {
     }
 }
 
+
+//scenarios
+
 function colorDiv() {
     if(click) {
         if(color == 'random') {
@@ -71,10 +79,13 @@ function colorDiv() {
 
 
 
+//global connect
 function setColor(colorChoice) {
 color = colorChoice
 }
 
+
+//resetting everything
 function reset() {
     let DivS = document.querySelectorAll('div')
    
